@@ -6,10 +6,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class EncapInheritA {
-	int default_int; // accessible by classes within the same package
 	public int public_int; // accessible by all classes
-	protected int protected_int; // accessible by subclasses
-	private int private_int; // accessible within the same class
+	protected int protected_int; // accessible by classes within the package or outside the package by subclass
+	int default_int; // accessible by classes within the package
+	private int private_int; // accessible only within the same class
 	
 	public static int static_int = 1; // shared among all instances
 	public final int final_int = 2; // immutable / unchangeable / can't be overridden

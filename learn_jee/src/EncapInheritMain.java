@@ -14,7 +14,7 @@ public class EncapInheritMain {
 		EncapInheritA A = new EncapInheritA();
 		EncapInheritB B = new EncapInheritB();
 		EncapInheritC C = new EncapInheritC();
-
+		// TODO - https://www.javatpoint.com/access-modifiers
 		A.printall(B);
 		B.printall(A);
 		C.printall(A);

@@ -5,11 +5,16 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class EncapInheritC {
+import pack.EncapInheritA;
+
+public class EncapInheritC extends EncapInheritA {
 	private int private_nonneg_int;
 	
-	public EncapInheritC() {
+	public EncapInheritC() { // TODO
 		this.setPrivate_int(-1);
+		EncapInheritA A = new EncapInheritA();
+		// System.out.println(A.protected_int);
+		System.out.println(this.protected_int);
 	}
 
 	public int getPrivate_int() {

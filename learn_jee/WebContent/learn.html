@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!-- indicates html document -->
+<head>
+<!-- indicates head which contains non-visual elements -->
+</head>
+<body>
+	<!-- indicates body which contains visual elements -->
+	<h1>I am h1</h1>
+	<!-- the largest header -->
+	<h6>I am h6</h6>
+	<!-- the smallest header -->
+	<hr />
+	<!-- a horizontal line -->
+	<p>
+		a paragraph with a line <br /> break <b> bold text </b> <big>
+			big text </big> <i> italic text </i> <small> small text </small> <strong>
+			strong text </strong> <sub> subscripted text </sub> <sup> superscripted
+			text </sup>
+		<ins> inserted text </ins>
+		<del> deleted text </del>
+	</p>
+	<p align="center">a centered paragraph</p>
+	<!-- align attribute -->
+	<hr width=50px />
+	<!-- width attribute -->
+	<a href="https://www.google.com" target="_blank"> <!-- defines a hyper link where href determines the URL and target="_blank" will have the link open in a new tab -->
+		Click <img
+		src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+		height=10% width=10% alt="GoogleMaster"> Here
+	</a>
+
+	<ol>
+		<li>1st</li>
+		<li>2nd</li>
+		<li>3rd</li>
+	</ol>
+	<ul>
+		<li>Red</li>
+		<li>Blue</li>
+		<li>Green</li>
+	</ul>
+	<table border="2">
+		<tr>
+			<td bgcolor="red">Red</td>
+			<td>Blue</td>
+			<td>Green</td>
+		</tr>
+		<tr>
+			<td>Yellow</td>
+			<td colspan="2">Orange</td>
+		</tr>
+	</table>
+	<form method="post" action="registration.jsp">
+		<input type="text" name="username" /> Username <br /> 
+		<input type="password" name="password" /> Password <br /> 
+		<input type="radio" name="gender" value="male" /> Male <br />
+		<input type="radio" name="gender" value="female" /> Female <br />
+		<input type="checkbox" name="likesTurtles" value="1" /> LikesTurtles <br />
+		<input type="checkbox" name="likesPotatoes" value="0" /> LikesPotatoes <br />
+		<input type="submit" value="Submit" />
+	</form>
+	<!-- TODO HTML5 
+	<%@ page import=...%>
+	<%@ session.getAttribute(arg); request.getParameter(arg); %>
+	--> 
+	<script src="learn.js"></script>
+</body>
+</html>
