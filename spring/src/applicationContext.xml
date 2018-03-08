@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+
+<bean id="studentbean" class="packMaster.Student">  
+<property name="name" value="Eow"></property>  
+</bean>  
+
+<bean id="studentbeaner" class="packMaster.Student">  
+<property name="name" value="Eower"></property>  
+</bean>  
+
+<bean id="constructorMaster" class="packMaster.Student">  
+<constructor-arg value="ConstructorMan" type="String"></constructor-arg>  
+</bean> 
+
+<bean id="constructorMasterJr" class="packMaster.Student">  
+<constructor-arg value="ConstructorMan Jr" type="String"></constructor-arg>  
+<constructor-arg value="2" type="int"></constructor-arg>  
+</bean> 
+
+<bean id="tup1" class="packMaster.nameordtuple">  
+<constructor-arg value="ConstructorMan Jr Jr" type="String"></constructor-arg>  
+<constructor-arg value="3" type="int"></constructor-arg>  
+</bean>
+
+<bean id="constructorMasterJrJr" class="packMaster.Student">  
+<constructor-arg>  
+<ref bean="tup1"/>  
+</constructor-arg>  
+</bean>  
+
+<bean id="strlister" class="packMaster.beantup">  
+<constructor-arg>  
+<list>  
+<value>Hello </value>  
+<value>hello </value>  
+<value>is anyone home?</value>  
+</list>  
+</constructor-arg>  
+</bean>
+
+</beans>

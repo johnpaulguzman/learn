@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="springjars/aop.zip"/>
+	<classpathentry kind="lib" path="springjars/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="springjars/com.springsource.org.apache.log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="springjars/core.zip"/>
+	<classpathentry kind="lib" path="springjars/ibatis.zip"/>
+	<classpathentry kind="lib" path="springjars/j2ee.zip"/>
+	<classpathentry kind="lib" path="springjars/javaconfig.zip"/>
+	<classpathentry kind="lib" path="springjars/jmxtools-1.2.1.jar"/>
+	<classpathentry kind="lib" path="springjars/misc.zip"/>
+	<classpathentry kind="lib" path="springjars/org.springframework.asm-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="springjars/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="springjars/org.springframework.context-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="springjars/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="springjars/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="springjars/persistCore.zip"/>
+	<classpathentry kind="lib" path="springjars/persistJdbc.zip"/>
+	<classpathentry kind="lib" path="springjars/persistJDO.zip"/>
+	<classpathentry kind="lib" path="springjars/remoting.zip"/>
+	<classpathentry kind="lib" path="springjars/test.zip"/>
+	<classpathentry kind="lib" path="springjars/web.zip"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
