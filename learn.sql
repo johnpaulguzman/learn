@@ -156,3 +156,40 @@ CREATE OR REPLACE VIEW users_copy AS
 SELECT * FROM users_copy;
 
 DROP VIEW IF EXISTS users_copy;
+
+-- TODO: indexing: creates a external-structured-version of a table that enables the use of faster retrieval algorithms (e.g. divide-and-conquer) at the cost of memory space.
+
+-- ==================================================
+-- STORED PROCEDURES
+
+DELIMITER $$
+CREATE PROCEDURE GetAllProducts()
+   BEGIN
+   SELECT *  FROM items;
+END$$
+DELIMITER ;
+
+CALL GetAllProducts();
+
+/*
+A stored procedure is a group of SQL statements that has been created and stored in the database. A stored procedure will accept input parameters so that a single procedure can be used over the network by several clients using different input data. A stored procedures will reduce network traffic and increase the performance. If we modify a stored procedure all the clients will get the updated stored procedure.
+
+
+Advantages of using stored procedures
+- A stored procedure allows modular programming.
+-- You can create the procedure once, store it in the database, and call it any number of times in your program.
+
+- A stored procedure allows faster execution.
+-- If the operation requires a large amount of SQL code that is performed repetitively, stored procedures can be faster. They are parsed and optimized when they are first executed, and a compiled version of the stored procedure remains in a memory cache for later use. This means the stored procedure does not need to be reparsed and reoptimized with each use, resulting in much faster execution times.
+
+-A stored procedure can reduce network traffic.
+-- An operation requiring hundreds of lines of Transact-SQL code can be performed through a single statement that executes the code in a procedure, rather than by sending hundreds of lines of code over the network.
+
+- Stored procedures provide better security to your data
+-- Users can be granted permission to execute a stored procedure even if they do not have permission to execute the procedure's statements directly.
+
+In SQL Server we have different types of stored procedures:
+- System stored procedures: procedures are stored in the master database
+- User-defined stored procedures: procedures are stored in a user database and are typically designed to complete the tasks in the user database
+- Extended stored Procedures: procedures that call functions from DLL files
+*/
